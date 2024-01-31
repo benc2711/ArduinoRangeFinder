@@ -1,0 +1,69 @@
+			     EE 109  - Spring 2023
+				  Rangefinder
+
+
+Review Question 1 (Cost Analysis):
+
+Assume we are building 1000 units of this system.  Use the provided part
+numbers (see the webpage) and the digikey.com or jameco.com website to find the
+total **cost per unit** (again assume we build a quantity of 1000 units) for
+these range finding systems.  Itemize the part costs (list each part and its
+unit cost when bought in units of 1000) and then show the final cost per unit
+below.  Note: You only need to price the components used in the project (not
+all the components in your lab kit.  Also, you do not need to account for the
+cost of the circuit board or wires. In a real environment we would manufacture
+a PCB (Printed Circuit Board). As an optional task, you can search online for
+PCB manufacturers and what the costs and options are in creating a PCB.
+
+Wire Stripper - not accounted for would be PCB
+Screw Driver - Not used 
+Breadboard - not accounted for 
+Cable - USB 1490
+Arduino - 27, 600
+LCD - 8900
+1000 Resistors 11.44 * 3 = 34.32
+1000 butons 395
+3 LED 104 *3 = 312
+1000 Tristate 241.6
+1000 Nandgates 272
+1000 Rotary encoder 2344.2
+1000 Knob .89 * 1000 = 890
+Total cost = 40,989.12 
+Per unit 40.98
+
+
+
+
+Review Question 2 (Health/Safety/Reliability)
+
+Assume this system was to be used in a real industrial monitoring application.
+
+Considering reliability, health, and safety...
+
+ - What scenarios might you suggest testing (considering both HW and SW) 
+    before releasing the product for use? 
+
+    I would test scenarios where the LED could get very hot. That could lead to a fire hazard. I would implement much more serious 
+    software tests that ensure correct range finding. I would also implement a more standardized testing procedure to ensure every part and the 
+    rangefinder itself works at the correct distances. 
+
+
+
+
+ - How might you make your design more reliable? By reliability we don't just
+   mean keeping it running correctly (though you should consider that), but
+   also how you can detect that a connected component has failed to gracefully
+   handle such situations.  You can consider both HW and SW points of failure,
+   issues related to the operational environment, etc. and how to mitigate
+   those cases.
+
+   There are definetly instances where wires would pop out. I understand that on a PCB this isn't really possible, but it would 
+   still be important to check to ensure that everything is soddered correctly. Additionally, in regard to software having many more error conditions
+   specifically when parts fail or if certain ranges are not certain. I noticed very often the range finder would get random results if not pointed correctly. 
+   Potentially adding a laser to show where exactly the range finder is pointing. 
+
+
+
+
+
+
